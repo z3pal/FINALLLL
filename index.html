@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Deki!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fffbe6;
+      margin-top: 50px;
+    }
+    button {
+      font-size: 24px;
+      padding: 15px 30px;
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: #ffcc00;
+      border: none;
+    }
+    img {
+      max-width: 300px;
+      margin: 10px;
+      display: none;
+    }
+    #message {
+      font-size: 20px;
+      margin-top: 20px;
+      display: none;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday Deki! 🎉</h1>
+  <button id="happyBtn">Press Me 😊</button>
+
+  <div id="message">
+    <p>
+      Happy 18th Birthday Deki, it's really an honour to see you grow and mature right before my eyes. When I met you, you were so shy and now you're growing up so fast and I get to witness it by your side. I'm sorry I couldn't get you a lot of gifts, so I'm trying to figure out ideas that'll stick with you for life if you know what I mean. This little dumb website will stay up forever so you can always look back on it. Love - Cin.
+    </p>
+  </div>
+
+  <img id="photo1" src="photo1.jpg" alt="Photo 1">
+  <img id="photo2" src="photo2.jpg" alt="Photo 2">
+
+  <audio id="birthdaySong" src="happy.mp3"></audio>
+
+  <script>
+    const button = document.getElementById('happyBtn');
+    const message = document.getElementById('message');
+    const photo1 = document.getElementById('photo1');
+    const photo2 = document.getElementById('photo2');
+    const audio = document.getElementById('birthdaySong');
+
+    button.addEventListener('click', () => {
+      alert('Happy Birthday! 🎉');
+      message.style.display = 'block';
+      photo1.style.display = 'inline';
+      photo2.style.display = 'inline';
+      audio.play();
+    });
+  </script>
+</body>
+</html>
